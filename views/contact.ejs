@@ -1,0 +1,33 @@
+<!-- contact.ejs , mohit , 4th june -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <header><%- include('partials/_nav') %></header>
+
+    <main>
+      <h1>Contact Me</h1>
+
+      <div class="contact-info">
+        <p>Email: mr.mohit1309@gmail.com</p>
+        <p>Phone: +14372994929</p>
+        <p>Address: 12 Blue Eagle Trail, Scarborough</p>
+      </div>
+
+      <form action="/submit" method="POST">
+        <input type="text" name="firstName" placeholder="First Name" />
+        <input type="text" name="lastName" placeholder="Last Name" />
+        <input type="tel" name="contactNumber" placeholder="Contact Number" />
+        <input type="email" name="email" placeholder="Email Address" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <center><button type="submit">Submit</button></center>
+      </form>
+    </main>
+
+    <footer><p>&copy; 2023 Mohit. All rights reserved.</p></footer>
+  </body>
+</html>
